@@ -1,13 +1,135 @@
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+.page {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+  /*box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);*/
+  background: #f6f5f4;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  monospace;
+}
+
+h5, .h5 {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 1rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.header {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  margin: 0.5rem;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 1rem 1rem;
+}
+
+.card-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.card-subtitle {
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.card-text:last-child {
+  margin-bottom: 0;
+  white-space: pre-wrap;
+}
+
+.avatar {
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.btn {
+  display: inline-block;
+  margin: 0.5rem;
+  font-weight: 400;
+  line-height: 1;
+  color: #fff;
+  background-color: #113a76;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  padding: 0.3rem 0.5rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.link {
+  position: relative;
+  flex-grow: 1;
+  text-align: center;
+  line-height: 3rem;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  opacity: .6;
+  border-bottom-width: .2rem;
+  border-bottom-style: solid;
+  border-bottom-color: transparent;
+}
+
+.post{
+  margin: 1.5rem;
+  flex: 1 1 auto;
+  padding: 1rem 1rem;
+}
+
+.post-field {
+  resize: none;
+  overflow: auto;
+  padding: 1rem;
+  width: 100%;
+  min-height: 150px;
+  outline: none;
+  border: 0;
+  font-size: 1.2rem;
 }
